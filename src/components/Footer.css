@@ -1,0 +1,96 @@
+:root {
+  --primary: #7200f2;
+  --background: #f5f8ff;
+  --background2: #010824;
+  --button: #7200f2;
+  --minus: #ec4b5b;
+  --plus: #31bc49;
+  --text: #333;
+  --text-white: #fff;
+  --bar: #453a99;
+  --icon: #918aff;
+}
+
+.footer {
+  background-color: var(--background2);
+  padding: 5rem 0;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .top {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .top .logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer .top .icon {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: var(--icon);
+  cursor: pointer;
+}
+
+.footer .col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer .bar {
+  width: 30px;
+  border-bottom: 4px solid var(--bar);
+  margin: 1rem 0;
+}
+
+h5 {
+  color: var(--text-white);
+}
+
+h1 {
+  color: var(--text-white);
+}
+
+.primary {
+  color: var(--icon);
+}
+
+.footer a {
+  margin: 0.5rem 0;
+  color: var(--text-white);
+}
+
+.footer .icon {
+  color: var(--icon);
+  margin: 1rem 1rem 1re 0;
+  font-size: 2rem;
+}
+
+.footer h5 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 940px) {
+  .footer {
+    height: 100%;
+  }
+
+  .footer .col-container {
+    grid-template-columns: 2fr 2fr;
+  }
+}

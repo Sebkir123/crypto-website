@@ -1,0 +1,68 @@
+:root {
+  --primary: #7200f2;
+  --background: #f5f8ff;
+  --background-white: #fff;
+  --background2: #010824;
+  --button: #7200f2;
+  --minus: #ec4b5b;
+  --plus: #31bc49;
+  --text: #333;
+  --text-white: #fff;
+  --bar: #918aff;
+}
+
+.hero {
+  background-color: var(--background2);
+}
+
+.hero .btn {
+  width: auto;
+  height: auto;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero .left {
+  padding: 1rem;
+  color: var(--text-white);
+}
+
+.hero h1 {
+  padding: 1rem 0;
+  color: var(--text-white);
+}
+
+.hero .input-container {
+  padding: 1rem 0;
+}
+
+.hero .right {
+  padding: 1rem;
+}
+
+.hero .img-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  max-width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 940px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+}

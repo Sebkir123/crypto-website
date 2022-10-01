@@ -1,0 +1,129 @@
+:root {
+  --primary: #7200f2;
+  --background: #f5f8ff;
+  --background2: #010824;
+  --button: #7200f2;
+  --minus: #ec4b5b;
+  --plus: #31bc49;
+  --text: #333;
+  --text-white: #fff;
+  --bar: #918aff;
+}
+
+.coin-container .content {
+  max-width: 740px;
+  margin: 1rem auto;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background2);
+  box-shadow: 0px 0px 12px var(--button);
+  color: var(--text-white);
+  border-radius: 20px;
+}
+
+.rank {
+  margin: 0.5 0;
+}
+
+.rank-btn {
+  border: 1px solid var(--bar);
+  box-shadow: 0px 0px 8px var(--button);
+  background-color: var(--bar);
+  color: var(--text-white);
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info .coin-heading {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.info .coin-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info p {
+  padding-right: 1rem;
+  color: var(--text-white);
+}
+
+table {
+  margin: 0.5rem 0;
+}
+
+td,
+th {
+  padding: 8px;
+  text-align: center;
+  color: var(--text-white);
+}
+
+th {
+  background-color: var(--bar);
+  border-radius: 20px;
+  padding-right: 1px;
+  color: var(--text-white);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+  color: var(--text-white);
+}
+
+.stats .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--bar);
+  margin: 0.6rem 0;
+  padding-bottom: 0.5rem;
+}
+
+.stats .row p:first-child {
+  color: var(--background);
+}
+
+.about h3 {
+  margin: 1rem 0;
+}
+
+.container .a {
+  color: var(--text-white);
+}
+
+@media screen and (max-width: 700px) {
+  .coin-container .content {
+    max-width: 100%;
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  td,
+  th {
+    padding: 3px;
+  }
+
+  .rank {
+    margin: 0.5rem;
+  }
+
+  .rank-btn {
+    margin: 0.5rem 0;
+  }
+}

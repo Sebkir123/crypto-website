@@ -1,0 +1,103 @@
+:root {
+  --primary: #7200f2;
+  --background: #f5f8ff;
+  --background2: #110a27;
+  --button: #7200f2;
+  --minus: #ec4b5b;
+  --plus: #31bc49;
+  --text: #333;
+  --text-white: #fff;
+  --bar: #918aff;
+}
+
+.contact {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: var(--background2);
+}
+
+.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contact .left {
+  adding: 1rem;
+  color: var(--text-white);
+}
+
+.contact .left p {
+  margin: 1.5rem 0;
+  color: var(--text-white);
+}
+
+.contact .right {
+  padding: 1rem;
+}
+
+.contact .form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container .smallHeader {
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+
+.contact form {
+  width: 100%;
+  margin: 1rem;
+  background-color: var(--button);
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+.contact .form-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form label {
+  margin: 2rem 0 0.7rem 0;
+  color: var(--text);
+}
+
+.btn {
+  width: 100%;
+}
+
+.contact form input,
+textarea {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--bar);
+  margin: 1rem 0;
+  background-color: var(--background);
+  box-shadow: 0px 0px 12px var(--button);
+  color: var(--bar);
+  border-radius: 20px;
+}
+
+.contact form input:focus,
+textarea:focus {
+  outline: var(--bar);
+  box-shadow: 0 0 12px 0 var(--primary);
+}
+
+.contact h1 {
+  color: var(--bar);
+}
+
+@media screen and (max-width: 940px) {
+  .contact form {
+    width: 100%;
+  }
+}
