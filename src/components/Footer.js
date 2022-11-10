@@ -28,6 +28,8 @@ export const Footer = () => {
             <h5>Support</h5>
             <ul>
               <li>
+                {/* TODO: aim to avoid href as it will reload the entire app then trigerring useEffects
+                to run when it is not needed which could impact the app performance */}
                 <a href="/">Chat</a>
               </li>
               <li>

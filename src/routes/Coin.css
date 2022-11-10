@@ -1,4 +1,6 @@
 :root {
+  /* TODO: Great use of css variables here, I would advise to just have them within the index.css
+  they should be then acessible anywhere within the app  */
   --primary: #7200f2;
   --background: #f5f8ff;
   --background2: #010824;

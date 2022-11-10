@@ -15,6 +15,8 @@ function App() {
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false";
 
   useEffect(() => {
+    // TODO: Add this into a separate function so that if it needs to be reused there 
+    // is no need to repeat code
     axios
       .get(url)
       .then((response) => {
@@ -28,6 +30,7 @@ function App() {
 
   return (
     <>
+      {/* TODO: Great react router structure here with also the nested routes */}
       <Navbar />
       <Hero />
       <Routes>

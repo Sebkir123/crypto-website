@@ -4,6 +4,8 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 export const Contact = () => {
   const [status, setStatus] = useState("Submit");
+  // TODO great structure here with the handle submit this 
+  // would be ideal if it was linked to an api
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");

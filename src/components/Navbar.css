@@ -73,6 +73,7 @@ ul {
     display: flex;
   }
 
+  /* TODO: great use of transitions here to view the hamburger menu */
   .nav-menu {
     position: absolute;
     flex-direction: column;

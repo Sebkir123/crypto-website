@@ -13,6 +13,7 @@ export const Navbar = () => {
         <Link to="/">
           <h1 className="primary">CRYPTO</h1>
         </Link>
+        {/* TODO: great use of state to show and hide the side menu */}
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link to="/">Home</Link>

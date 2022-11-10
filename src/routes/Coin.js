@@ -9,9 +9,11 @@ const Coin = () => {
   const params = useParams();
   const [coin, setCoin] = useState({});
 
+  // TODO: Great use of the params to fetch an individual coin via the id
   const url = `https://api.coingecko.com/api/v3/coins/${params.coinId}`;
 
   useEffect(() => {
+    // TODO: Add this into a function to make it clearer the purpose of it
     axios
       .get(url)
       .then((res) => {
@@ -34,6 +36,8 @@ const Coin = () => {
           </div>
           <div className="info">
             <div className="coin-heading">
+              {/* TODO: great use of conditional rendering to avoid an error ocurring on the first render 
+              prior to the API returning the coin info  */}
               {coin.image ? <img src={coin.image.small} alt="" /> : null}
               <p>{coin.name}</p>
               {coin.symbol ? <p>{coin.symbol.toUpperCase()}/USD</p> : null}

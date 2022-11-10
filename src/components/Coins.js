@@ -18,6 +18,8 @@ const Coins = (props) => {
           <p className="hide-mobile">Mkt Cap</p>
         </div>
 
+        {/* TODO: great use of mapping to create each coint item and using the link to see a single coin
+        in more detail */}
         {props.coins.map((coins) => {
           return (
             <Link to={`/coin/${coins.id}`} element={<Coin />} key={coins.id}>
